@@ -8,6 +8,11 @@ This is a simple, exploratory project on attempting to do classifications of bir
 
 You can find the commit history of each member in the repository. Nehal and Wayne also worked on the video and presentation.
 
+## How to Use this Repository
+
+We have two notebooks `EDA.ipynb` and `CNN.ipynb`. The order to review them is 
+1. `EDA.ipynb`
+2. `CNN.ipynb`
 
 # Exploratory Data Analysis
 
@@ -103,6 +108,8 @@ We attempted to use a CNN model using the `Keras` API.
 ![Train and Test Accuracy Curve](./figures/hist_train_test_accuracy.png)
 
 ## Confusion Matrix
+
+We represent the bird species as discrete classes, represented from 0 to 87.
 
 ![Confusion Matrix](./figures/confusion_matrix_cnn.png)
 
