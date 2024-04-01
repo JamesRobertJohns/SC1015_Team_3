@@ -6,12 +6,13 @@ This is a simple, exploratory project on attempting to do classifications of bir
 
 ## About the Team
 
-You can find the commit histories of each member in the repository. Nehal and Wayne also worked on the video and presentation.
+You can find the commit history of each member in the repository. Nehal and Wayne also worked on the video and presentation.
 
 
 # Exploratory Data Analysis
 
-We extracted features from the audio signals for visualisation.
+We extracted features from the audio signals for visualisation and considered how they can help in this classification problem. The feature extraction is mainly done using the `librosa` 
+library.
 
 ## Metadata Analysis
 
@@ -19,21 +20,66 @@ The distribution of classes in the sample is balanced. With 3 members per class.
 
 ![Histogram of Class Distribution](./figures/class_distribution.png)
 
-To listen to the audio samples, download the `EDA.ipynb`.
+To listen to the audio samples, download the `EDA.ipynb` as `ipy.display` does not work when the notebook is rendered in GitHub.
 
 ## Time Domain Analysis
 
+In time domain, we explored the amplitude envelope, root-mean-squared energy, and zero crossing rate.
+
+![Time Domain Analysis](./figures/time_domain.png)
+
 ## Frequency Domain Analysis
+
+In the frequency domain, we explored the frequency spectrum:
+
+![Frequency Spectrum Analysis](./figures/frequency_spectrum.png)
+
+as well as the spectral centroid:
+
+![Spectral Centroid Analysis](./figures/spectral_centroid.png)
 
 ## Time-frequency Domain Analysis
 
+In the frequency domain, we explored the spectrogram:
+
+the Mel spectogram:
+
+as well as the Mel-Frequency Cepstrum:
+
 # Data Prcocessing
+
+## Reducing Noise
+
+We used the `NoiseReduce` library to reduce background noise of signals.
+
+![Effect of Noise Reduce](./figures/noisereduce.png)
+
+## Standardising Duration
+
+We used the `audiomentations` library to standardise audio duration. We chose to pad / clip to 50s based on the distribution of the audio duration:
+
+![Audio Duration Distribution](./figures/duration_distribution.png)
 
 # Traditional Machine Learning Model
 
+We tested two models from the `sklearn` library: K-Nearest-Neighbour and Random Forest models. We used `GridSearch_CV` to attempt to fine tune hyperparameters. Unfortunately, the test accuracy is low, at 28%. 
+
+We concluded that this was due to low member counts in each class, yet high number of classes. To solve this problem, we applied data augmentation and tested out a CNN model.
+
 # Data Augmentation
 
-## Horizontal Flip
+We generated 528 extra samples using data augmentation, bringing the total sample size to 792. 
+
+## Augmentation Technique
+
+This is done by horizontal flip and noise introduction, using `skimage` library.
+
+![Data Augmentation](./figures/data_augmentation.png)
+
+Example of the final transformations:
+
+![Transformation Results](./figures/transformation.png)
+
 
 # Convoluted Neural Network
 
