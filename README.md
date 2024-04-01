@@ -42,11 +42,17 @@ as well as the spectral centroid:
 
 In the frequency domain, we explored the spectrogram:
 
+![Spectrogram](./figures/spectrogram.png)
+
 the Mel spectogram:
+
+![Mel Spectrogram](./figures/mel_spectrogram.png)
 
 as well as the Mel-Frequency Cepstrum:
 
-# Data Prcocessing
+![MFCC](./figures/MFCC.png)
+
+# Data Processing
 
 ## Reducing Noise
 
@@ -80,18 +86,32 @@ Example of the final transformations:
 
 ![Transformation Results](./figures/transformation.png)
 
-
 # Convoluted Neural Network
+
+We attempted to use a CNN model using the `Keras` API.
 
 ## Parameters
 
+![CNN Parameters](./figures/parameter.png)
+
 ## Train and Test Loss
+
+![Train and Test Loss Curve](./figures/hist_train_test_loss.png)
 
 ## Train and Test Accuracy
 
+![Train and Test Accuracy Curve](./figures/hist_train_test_accuracy.png)
+
 ## Confusion Matrix
 
+![Confusion Matrix](./figures/confusion_matrix_cnn.png)
+
 ## Score Metrics
+
+- Test Accuracy score =  55.97%
+- Test Precision score =  57.58%
+- Test Recall score =  53.52%
+- Test Set F-score score =  51.56%
 
 # Reference
 
