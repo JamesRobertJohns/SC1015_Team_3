@@ -50,7 +50,7 @@ the Mel spectogram:
 
 as well as the Mel-Frequency Cepstrum:
 
-![MFCC](./figures/MFCC.png)
+![MFCC](./figures/mfcc.png)
 
 # Data Processing
 
