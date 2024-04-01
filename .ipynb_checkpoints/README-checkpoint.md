@@ -17,7 +17,7 @@ We extracted features from the audio signals for visualisation.
 
 The distribution of classes in the sample is balanced. With 3 members per class. 
 
-![Histogram of Class Distribution](./figures/class_distribution)
+![Histogram of Class Distribution](./figures/class_distribution.png)
 
 To listen to the audio samples, download the `EDA.ipynb`.
 
