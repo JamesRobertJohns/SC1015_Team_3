@@ -16,8 +16,7 @@ We have two notebooks `EDA.ipynb` and `CNN.ipynb`. The order to review them is
 
 # Exploratory Data Analysis
 
-We extracted features from the audio signals for visualisation and considered how they can help in this classification problem. The feature extraction is mainly done using the `librosa` 
-library.
+We extracted features from the audio signals for visualisation and considered how they can help in this classification problem. The feature extraction is mainly done using the `librosa` library.
 
 ## Metadata Analysis
 
@@ -122,6 +121,12 @@ We represent the bird species as discrete classes, represented from 0 to 87.
 
 # Reference
 
-This project makes several references to different sources, including GitHub repositories and medium blogs. These references are detailed in the `.ipynb`. 
+This project makes several references to different sources, including GitHub repositories. These references are detailed in the `.ipynb`. The following is just a list for overview
 
+- [1] L. Zenkov, “sklearn-audio-classification ,” *GitHub*, 2020. https://github.com/IliaZenkov/sklearn-audio-classification/blob/master/sklearn_audio_classification.ipynb (accessed Apr. 03, 2024).
+- [2] N. Agrawal, “Decoding the Symphony of Sound: Audio Signal Processing for Musical Engineering,” *Medium*, Aug. 08, 2023. https://towardsdatascience.com/decoding-the-symphony-of-sound-audio-signal-processing-for-musical-engineering-c66f09a4d0f5
+- [3] Md Shahrin, Muhammad Huzaifah. (2017). Comparison of Time-Frequency Representations for Environmental Sound Classification using Convolutional Neural Networks.
+- [4] Sharma, Garima & Umapathy, Kartikeyan & Krishnan, Sridhar. (2020). Trends in audio signal feature extraction methods. *Applied Acoustics*. 158. 107020. 10.1016/j.apacoust.2019.107020.
+- [5] R. Vidiyala, “Normalization vs Standardization,” *Medium*, Jun. 28, 2020. https://towardsdatascience.com/normalization-vs-standardization-cb8fe15082eb
+- [6] J. F. Santos, “jfsantos/keras-tutorial,” *GitHub*, Jan. 04, 2024. https://github.com/jfsantos/keras-tutorial (accessed Apr. 03, 2024).
 
