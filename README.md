@@ -2,7 +2,7 @@
 
 ## About the Project
 
-This is a simple, exploratory project on attempting to do classifications of bird species by using birdsongs. The data set is the <a href="https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset">British Birdsong dataset</a> taken from Kaggle. It has 264 samples from 88 unique bird species. 
+This is a simple, exploratory project on attempting classify bird species using birdsongs. The data set is the <a href="https://www.kaggle.com/datasets/rtatman/british-birdsong-dataset">British Birdsong dataset</a> taken from Kaggle. It has 264 samples from 88 unique bird species. 
 
 ## About the Team
 
