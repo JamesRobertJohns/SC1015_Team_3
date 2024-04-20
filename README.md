@@ -6,7 +6,7 @@ This is a simple, exploratory project on attempting classify bird species using 
 
 ## About the Team
 
-You can find the commit history of each member in the repository. Nehal and Wayne also worked on the video and presentation.
+You can find the commit history of each member in the repository.
 
 ## How to Use this Repository
 
